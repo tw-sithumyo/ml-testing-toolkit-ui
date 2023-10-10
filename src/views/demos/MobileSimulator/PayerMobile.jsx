@@ -116,7 +116,7 @@ class PayerMobile extends React.Component {
                     <Card size='small'>
                         <Row>
                             <Col span={8}>
-                                <Text>F.Name:</Text>
+                                <Text>Merchant Name:</Text>
                             </Col>
                             <Col span={16}>
                                 <Text strong>{this.state.partyInfo && this.state.partyInfo.personalInfo && this.state.partyInfo.personalInfo.complexName && this.state.partyInfo.personalInfo.complexName.firstName}</Text>
@@ -124,7 +124,7 @@ class PayerMobile extends React.Component {
                         </Row>
                         <Row>
                             <Col span={8}>
-                                <Text>M.Name:</Text>
+                                <Text>Location:</Text>
                             </Col>
                             <Col span={16}>
                                 <Text strong>{this.state.partyInfo && this.state.partyInfo.personalInfo && this.state.partyInfo.personalInfo.complexName && this.state.partyInfo.personalInfo.complexName.middleName}</Text>
@@ -132,7 +132,7 @@ class PayerMobile extends React.Component {
                         </Row>
                         <Row>
                             <Col span={8}>
-                                <Text>L.Name:</Text>
+                                <Text>Payinto Account ID:</Text>
                             </Col>
                             <Col span={16}>
                                 <Text strong>{this.state.partyInfo && this.state.partyInfo.personalInfo && this.state.partyInfo.personalInfo.complexName && this.state.partyInfo.personalInfo.complexName.lastName}</Text>
@@ -287,11 +287,11 @@ class PayerMobile extends React.Component {
             <>
                 <Row className='ml-2'>
                     <Col span={24}>
-                        <Text strong>Enter Phone Number</Text>
+                        <Text strong>Enter Merchant Account ID</Text>
                         <Input.Search
-                            placeholder='Phone Number'
+                            placeholder='Merchant Account ID'
                             loading={this.state.gettingPartyInfo}
-                            defaultValue='987654320'
+                            defaultValue='000001'
                             onSearch={this.handleSearch}
                         />
                     </Col>

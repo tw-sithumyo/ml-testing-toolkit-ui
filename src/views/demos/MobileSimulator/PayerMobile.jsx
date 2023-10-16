@@ -132,14 +132,6 @@ class PayerMobile extends React.Component {
                         </Row>
                         <Row>
                             <Col span={8}>
-                                <Text>Payinto Account ID:</Text>
-                            </Col>
-                            <Col span={16}>
-                                <Text strong>{this.state.partyInfo && this.state.partyInfo.personalInfo && this.state.partyInfo.personalInfo.complexName && this.state.partyInfo.personalInfo.complexName.lastName}</Text>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col span={8}>
                                 <Text>Bank:</Text>
                             </Col>
                             <Col span={16}>
